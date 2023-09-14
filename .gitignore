@@ -1,0 +1,11 @@
+*.bkp
+*.tasty
+*.class
+target
+public
+classes
+.bsp
+.metals
+.scala-build
+.vscode
+.code

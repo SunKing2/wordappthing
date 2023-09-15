@@ -5,33 +5,6 @@ import simplesql as sq // for new way of doing things
 import org.sqlite.SQLiteDataSource // for new way of doing things
 
 
-  
-  
-  
-// val wordsFile = "words.txt"
-
-// val words = Array (
-//     "aa",
-//     "ala",
-//     "able",
-//     "bale",
-//     "cage",
-//     "zeta",
-//     "zygote"
-// )
-
-//  print("Enter something:")
-// val input = scala.io.StdIn.readLine()
-// println(s"You entered: $input")
-
-
-// for (word <- words) {
-//     println(s"${word.sorted} $word")
-// }
-
-
-
-
 object Main:
     
   case class Employee(name: String, age: Int, salary: Int) derives sq.Reader

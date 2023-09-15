@@ -2,6 +2,8 @@
 
 import java.sql.{Connection, DriverManager, ResultSet};
 
+val wordsFile = "words.txt"
+
 object Main:
   val url = "jdbc:sqlite:sqlite.db"
   val driver = "org.sqlite.JDBC"
@@ -12,12 +14,10 @@ object Main:
     try
       val statement = connection.createStatement
 
-      statement.setQueryTimeout(30)
-      
       statement.executeUpdate("drop table if exists words")
       statement.executeUpdate("create table words (word string)")
 
-      scala.io.Source.fromFile("words.txt").getLines().foreach { line =>
+      scala.io.Source.fromFile(wordsFile).getLines().foreach { line =>
         statement.executeUpdate(s"insert into words values('$line')")
       }
 
@@ -28,4 +28,3 @@ object Main:
     
   def main(args:Array[String]) =
     makedb()
-    

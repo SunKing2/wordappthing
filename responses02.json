@@ -1,0 +1,32 @@
+{
+    "user_responses": [
+        {
+            "response": "aa",
+            "seconds_to_respond": 3
+        },
+        {
+            "response": "ala",
+            "seconds_to_respond": 3
+        },
+        {
+            "response": "able",
+            "seconds_to_respond": 3
+        },
+        {
+            "response": "bale",
+            "seconds_to_respond": 3
+        },
+        {
+            "response": "cage",
+            "seconds_to_respond": 3
+        },
+        {
+            "response": "zeta",
+            "seconds_to_respond": 3
+        },
+        {
+            "response": "zygote",
+            "seconds_to_respond": 3
+        }
+    ]
+}

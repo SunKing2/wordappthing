@@ -1,5 +1,5 @@
 //> using lib org.xerial:sqlite-jdbc:3.43.0.0
-//> using dep com.lihaoyi::upickle::3.1.2
+//> using dep com.lihaoyi::upickle::3.1.3
 //> using dep com.lihaoyi::pprint::0.8.1
 
 import scala.io.Source
@@ -51,8 +51,4 @@ def runUsingJsonFile(words: Array[String], responsesJsonFilename: String): Int =
 // the sequence of words is tested against different json files (containing responses)
 for filename <- Seq("responses01.json", "responses02.json") do
     println(s"nCorrect: ${runUsingJsonFile(words, filename)}")
-
-
-
-
 
